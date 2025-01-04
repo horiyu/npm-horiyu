@@ -1,0 +1,33 @@
+{
+  "name": "horiyu",
+  "version": "0.1.0",
+  "description": "A personal package for @horiyu_com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/horiyu/npm-horiyu.git"
+  },
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business",
+    "card"
+  ],
+  "author": "horiyu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/horiyu/npm-horiyu/issues"
+  },
+  "homepage": "https://github.com/horiyu/npm-horiyu#readme",
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
