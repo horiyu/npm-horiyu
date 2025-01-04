@@ -8,6 +8,7 @@
     /* Modules */
     "module": "commonjs",
     "rootDir": "./src",
+    "outDir": "./dist",
 
     /* Interop Constraints */
     "esModuleInterop": true,
