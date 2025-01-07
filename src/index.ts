@@ -4,7 +4,7 @@ import chalk from 'chalk';
 import boxen from 'boxen';
 
 const links = [
-  { label: 'Web', url: 'http://horiyu.com' },
+  // { label: 'Web', url: 'http://horiyu.com' },
   { label: 'X', url: 'https://x.com/horiyu_com' },
   { label: 'npm', url: 'https://www.npmjs.com/~horiyu_com' },
   { label: 'Zenn', url: 'https://zenn.dev/horiyu' },
