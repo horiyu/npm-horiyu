@@ -1,0 +1,5 @@
+# Usage
+## Usage
+```
+npx horiyu
+```
