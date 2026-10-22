@@ -10,7 +10,7 @@
     "prepublishOnly": "npm run build"
   },
   "bin": {
-    "horiyu": "./dist/index.js"
+    "horiyu": "dist/index.js"
   },
   "files": [
     "dist"
