@@ -1,6 +1,6 @@
 {
   "name": "horiyu",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A personal package for @horiyu_com",
   "main": "dist/index.js",
   "type": "module",
