@@ -1,8 +1,9 @@
 name: Publish to npm
 
-# Publishes via npm trusted publishing (OIDC) with provenance.
-# Configure the Trusted Publisher on npmjs.com for this repository and
-# workflow file (publish.yml) before creating a release.
+# Stages a release via npm trusted publishing (OIDC) with provenance.
+# The Trusted Publisher on npmjs.com is stage-only, so the version stays
+# uninstallable until a maintainer approves it with 2FA on npmjs.com
+# (or `npm stage approve <stage-id>`).
 on:
   release:
     types: [published]
@@ -21,7 +22,7 @@ jobs:
 
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6.5.0
         with:
-          # Trusted publishing requires npm >= 11.5.1 (bundled with Node 24).
+          # `npm stage` requires npm >= 11.15.0 (Node 24.22 bundles 11.19).
           node-version: 24
           registry-url: https://registry.npmjs.org
 
@@ -29,4 +30,4 @@ jobs:
 
       - run: npm run build
 
-      - run: npm publish --provenance --access public --ignore-scripts
+      - run: npm stage publish --provenance --access public --ignore-scripts
